@@ -1,0 +1,32 @@
+/** clothingstore:
+shirts (5)
+pants (7)
+skirts (3)
+belts (2)
+shorts (10)
+**/
+CREATE TABLE clothingstore (id INTEGER PRIMARY KEY, NAME TEXT, QUANITITY INTEGER);
+INSERT INTO clothingstore VALUES (1, "shirts",5);
+INSERT INTO clothingstore VALUES (2, "pants", 7);
+INSERT INTO clothingstore VALUES (3, "skirts", 3);
+INSERT INTO clothingstore VALUES (4, "belts", 2);
+INSERT INTO clothingstore VALUES (5, "shorts",10);
+SELECT * FROM clothingstore;
+SELECT SUM (quanitity) FROM clothingstore;
+
+DATABASE SCHEMA
+
+clothingstore 5 rows
+id (PK) INTEGER
+NAME TEXT
+QUANITITY INTEGER
+QUERY RESULTS
+
+id	NAME	QUANITITY
+1	shirts	5
+2	pants	7
+3	skirts	3
+4	belts	2
+5	shorts	10
+SUM (quanitity)
+27
